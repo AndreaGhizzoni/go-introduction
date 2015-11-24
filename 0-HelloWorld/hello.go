@@ -1,10 +1,10 @@
-//
+// Basic hello world example
 //
 //author: Andrea Ghizzoni
 //info:   andrea.ghz@gmail.com
 package main
 
-import( 
+import(
     "fmt"
     "os"
     "strings"
