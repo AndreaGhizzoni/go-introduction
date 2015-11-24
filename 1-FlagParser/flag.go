@@ -1,4 +1,4 @@
-//
+// Introduction to flag module
 //
 //author: Andrea Ghizzoni
 //info:   andrea.ghz@gmail.com
