@@ -1,5 +1,5 @@
 // Read all the content of file given as path with -path flag with os and io
-// primitive
+// primitive. Using an efficient way to concatenate strings (String buffer)
 //
 //author: Andrea Ghizzoni
 //info:   andrea.ghz@gmail.com
@@ -11,14 +11,16 @@ import (
     "os"
     "flag"
     "strings"
+    "bytes"
 )
 
-func readFile( fileName string ) (content string) {
+func readFile( fileName string ) string {
     f, err := os.Open( fileName ); defer f.Close()
     if err != nil{
         panic(err)
     }
 
+    var content bytes.Buffer // this is a string buffer
     buf := make( []byte, 1024 )
     for {
         n, err := f.Read(buf)
@@ -26,10 +28,10 @@ func readFile( fileName string ) (content string) {
             panic(err)
         }
         if n == 0 { break }
-        content += string(buf)
+        content.Write(buf)
     }
 
-    return
+    return content.String()
 }
 
 func main(){
