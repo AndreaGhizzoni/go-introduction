@@ -1,7 +1,4 @@
-// Simple structure with method
-//
-//author: Andrea Ghizzoni
-//info:   andrea.ghz@gmail.com
+//Simple structure with method
 package main
 
 import "fmt"

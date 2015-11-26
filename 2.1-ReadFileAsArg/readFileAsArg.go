@@ -1,7 +1,4 @@
-// Union of example 1 and 2
-//
-//author: Andrea Ghizzoni
-//info:   andrea.ghz@gmail.com
+//Union of example 1 and 2
 package main
 
 import (

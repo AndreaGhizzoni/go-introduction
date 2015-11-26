@@ -1,7 +1,4 @@
-// Basic file read using ioutil module
-//
-//author: Andrea Ghizzoni
-//info:   andrea.ghz@gmail.com
+//Basic file read using ioutil module
 package main
 
 import (

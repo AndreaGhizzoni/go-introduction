@@ -1,7 +1,4 @@
-// Simple use of Interface
-//
-//author: Andrea Ghizzoni
-//info:   andrea.ghz@gmail.com
+//Simple use of Interface
 package main
 
 import "fmt"

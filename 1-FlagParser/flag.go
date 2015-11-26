@@ -1,7 +1,4 @@
-// Introduction to flag module
-//
-//author: Andrea Ghizzoni
-//info:   andrea.ghz@gmail.com
+//Introduction to flag module
 package main
 
 import (

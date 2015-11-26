@@ -1,7 +1,4 @@
-//
-//
-//author: Andrea Ghizzoni
-//info:   andrea.ghz@gmail.com
+//Read file with bufio package
 package main
 
 import(

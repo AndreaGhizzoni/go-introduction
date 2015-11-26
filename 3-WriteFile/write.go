@@ -1,7 +1,4 @@
-// Write a string into a given file
-//
-//author: Andrea Ghizzoni
-//info:   andrea.ghz@gmail.com
+//Write a string into a given file
 package main
 
 import (

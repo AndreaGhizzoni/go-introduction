@@ -1,7 +1,4 @@
-// Basic hello world example
-//
-//author: Andrea Ghizzoni
-//info:   andrea.ghz@gmail.com
+//Basic hello world example.
 package main
 
 import(

@@ -1,8 +1,5 @@
-// Read all the content of file given as path with -path flag with os and io
-// primitive. Using an efficient way to concatenate strings (String buffer)
-//
-//author: Andrea Ghizzoni
-//info:   andrea.ghz@gmail.com
+//Read all the content of file given as path with -path flag with os and io
+//primitive. Using an efficient way to concatenate strings (String buffer)
 package main
 
 import (
