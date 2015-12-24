@@ -1,4 +1,4 @@
-//Union of example 1 and 2
+// Union of example 1 and 2
 package main
 
 import (
@@ -6,6 +6,7 @@ import (
     "flag"
     "strings"
     "io/ioutil"
+    "os"
 )
 
 func main(){
@@ -14,15 +15,15 @@ func main(){
 
     if strings.EqualFold( *path, "" ) {
         fmt.Println( "absolute path not specified" )
-        return
+        os.Exit(1)
     }
 
     out, err := ioutil.ReadFile(*path)
     if err != nil {
         fmt.Println( err )
-        return
+        os.Exit(1)
     }
 
-    fmt.Printf( string(out) ) // ReadFile returns a []byte
+    fmt.Printf( string(out) )
 }
 

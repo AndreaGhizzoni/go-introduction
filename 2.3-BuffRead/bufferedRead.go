@@ -1,4 +1,4 @@
-//Read file with bufio package
+// Read file using buffer in bufio package
 package main
 
 import(

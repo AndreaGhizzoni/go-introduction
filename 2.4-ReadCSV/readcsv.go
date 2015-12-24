@@ -1,4 +1,4 @@
-//Example to read csv file
+// Example to read csv file with encoding/csv package and count all the entry
 package main
 
 import (
@@ -19,16 +19,19 @@ func main(){
         return
     }
 
+    // open the csv file
     file, err := os.Open(*csvFilePath)
     if err != nil {
         fmt.Println("Error: ", err)
         return
     }
 
+    // create a new csv reader based on a buffer to opened file.
     csvR := csv.NewReader(bufio.NewReader(file))
 
     var counter int64
     for {
+        // read the entire csv entry
         _, err := csvR.Read()
         if err == io.EOF { break }
         counter++
