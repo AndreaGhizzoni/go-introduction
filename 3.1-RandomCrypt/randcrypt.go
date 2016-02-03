@@ -2,21 +2,20 @@
 package main
 
 import (
-    "fmt"
-    "crypto/rand"
-    "encoding/binary"
-    "bytes"
+	"bytes"
+	"crypto/rand"
+	"encoding/binary"
+	"fmt"
 )
 
-func main(){
-    buf := make([]byte, 1024)
-    _, err := rand.Read(buf)
-    if err != nil {
-        fmt.Errorf("Error, ", err)
-        return
-    }
-    var nRand int64
-    binary.Read(bytes.NewReader(buf), binary.LittleEndian, &nRand)
-    fmt.Println(nRand)
+func main() {
+	buf := make([]byte, 1024)
+	_, err := rand.Read(buf)
+	if err != nil {
+		fmt.Errorf("Error, ", err)
+		return
+	}
+	var nRand int64
+	binary.Read(bytes.NewReader(buf), binary.LittleEndian, &nRand)
+	fmt.Println(nRand)
 }
-

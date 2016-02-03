@@ -3,22 +3,21 @@
 package main
 
 import (
-    "fmt"
-    "io/ioutil"
+	"fmt"
+	"io/ioutil"
 )
 
-func main(){
-    // create a full path of file to read
-    fileName := "/tmp/input"
+func main() {
+	// create a full path of file to read
+	fileName := "/tmp/input"
 
-    // use ioutil to read all the file. Note the double return parameter 
-    out, err := ioutil.ReadFile(fileName)
-    if err != nil {
-        fmt.Println( err )
-        return
-    }
+	// use ioutil to read all the file. Note the double return parameter
+	out, err := ioutil.ReadFile(fileName)
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
 
-    // cast to string because ioutil.ReadFile() returns a []byte
-    fmt.Printf( string(out) )
+	// cast to string because ioutil.ReadFile() returns a []byte
+	fmt.Printf(string(out))
 }
-
