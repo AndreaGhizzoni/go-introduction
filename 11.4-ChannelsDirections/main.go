@@ -19,4 +19,7 @@ func main() {
 	chanCopy(from, to)
 	// retrieve from the second channel
 	fmt.Printf("Read from second channel: %s\n", <-to)
+
+	close(from)
+	close(to)
 }

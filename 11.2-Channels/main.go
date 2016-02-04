@@ -18,4 +18,7 @@ func main() {
 	fmt.Print("Messages from go routine: ")
 	// retrieve the message from go routine
 	fmt.Println(<-messages)
+
+	// closing the channel. In this way nothing could be sent into the channel
+	close(messages)
 }

@@ -22,4 +22,5 @@ func main() {
 
 	// wait until go-routine put something into the channel
 	<-goRoutineDone
+	close(goRoutineDone)
 }
