@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"regexp"
 
-	"github.com/AndreaGhizzoni/10-WebServer/page"
+	"github.com/AndreaGhizzoni/go-introduction/10-WebServer/page"
 )
 
 // Variable to hold all template file just specify the patter where to find all
